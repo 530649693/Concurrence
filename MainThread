@@ -1,0 +1,15 @@
+public class MainThread {
+	public static void main(String[] args) {
+//		LiftOff launch = new LiftOff(11);
+//		launch.run();
+		
+//		Thread t = new Thread(new LiftOff());
+//		t.start();
+//		System.out.println("wait for liftOff");
+		
+		for(int i = 0; i < 5;i++){
+			new Thread(new LiftOff()).start();
+		}
+		System.out.println("before liftOff");
+	}
+}
